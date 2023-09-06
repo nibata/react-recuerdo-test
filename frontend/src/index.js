@@ -9,12 +9,13 @@ import ButtonExampleEmphasis from "./components/ExampleSemantic"
 import ButtonExampleAnimated from "./components/ExampleSemantic2"
 import PlotExamplePlotly from "./components/ExamplePlotly"
 import PlotExamplePlotly2 from "./components/ExamplePlotly2"
-
+import SidebarExampleSidebar from "./components/ExampleSemanticSidebar";
 
 function App() {
     return (
         <ChakraProvider>
-            <Header />
+            <Header title={"HOLAAAA"}/>
+            <SidebarExampleSidebar />
             <Users />
             <ButtonExampleEmphasis />
             <ButtonExampleAnimated />
