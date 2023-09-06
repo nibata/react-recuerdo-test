@@ -24,10 +24,9 @@ const UsersContext = React.createContext({
 export default function Users() {
     const [users, setUsers] = useState([])
     const fetchUsers = async () => {
-        const response = await fetch("http://localhost:8000/users")
-        const users = await response.json()
-        console.log(users)
-        setUsers(users)
+        //const response = await fetch("http://localhost:8000/users")
+        //const users = await response.json()
+        setUsers(JSON.parse('[{"FullName": "Nicolás Bacquet", "Email": "nibata@gmail.com"}]'))
     }
     useEffect(() => {
         fetchUsers()
